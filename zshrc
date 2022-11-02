@@ -136,4 +136,6 @@ alias storj='aws s3 --endpoint-url=https://gateway.storjshare.io'
 # My Alias
 alias mpv="devour mpv"
 alias yt-dlp-audio="yt-dlp -f 'ba' -x --audio-format mp3"
+alias myip='curl -4 http://ifconfig.co/ip'
+alias speedtest='function _e(){ curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -; };_e'
 
