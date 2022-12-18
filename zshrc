@@ -1,5 +1,6 @@
-
 # ----- User Edits ----- #
+export EDITOR="nvim"
+export LANG="en_US.UTF-8"
 export PATH="/home/radowoo/.local/bin:$PATH"
 
 # ls
