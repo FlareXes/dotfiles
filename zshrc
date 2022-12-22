@@ -13,7 +13,7 @@ alias lg='lsd -l --group-directories-first'
 alias tree='lsd --tree'
 
 # My Alias
-alias mpv='devour mpv'
+alias mpv='function _e(){ [[ $1 ]] && url="$1" || url="$(xclip -o)"; devour mpv "$url" };_e'
 alias yt-dlp-audio="yt-dlp -f 'ba' -x --audio-format mp3"
 alias myip='curl -4 http://ifconfig.co/ip'
 alias speedtest='function _e(){ curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -; };_e'
