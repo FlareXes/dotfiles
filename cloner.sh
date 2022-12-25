@@ -1,12 +1,12 @@
 #!/bin/sh
 
-repos_paths=$(realpath ./*)
+repos=$(cat ./repos)
 read -sp "Password: " password
 
-for path in $repos_paths 
+for repo in $repos
 do
-  echo -e "\n$path"
-  [[ -d $path ]] && cd $path && expect -c "spawn git fetch origin; expect -nocase \"Enter passphrase for key '$HOME/.ssh/id_ed25519':\" {send \"$password\r\"; interact}" && git reset --hard FETCH_HEAD
+  echo -e "\n$repo"
+  expect -c "spawn git clone git@github.com:flarexes/$repo; expect -nocase \"Enter passphrase for key '$HOME/.ssh/id_ed25519':\" {send \"$password\r\"; interact}"
 done
 
 echo "DONE!, $?"
