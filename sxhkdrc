@@ -4,8 +4,13 @@
 
 # Pass-Otp
 alt + shift + l
-  /usr/local/bin/passrofi
+  sh /usr/local/bin/passrofi
 
 # clip-mpv
 super + shift + m
-  $HOME/.scripts/clip-mpv.sh
+  sh $HOME/.scripts/clip-mpv.sh
+
+# clip-mpv
+super + shift + y
+  sh $HOME/.scripts/ytplay-menu.sh
+
