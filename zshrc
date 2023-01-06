@@ -17,9 +17,11 @@ alias c="clear"
 alias h="history | cut -c 8- | fzf --tac | xargs -I {} xdotool type --window getactivewindow {}"
 
 # My Alias
+alias open='xdg-open'
 alias mpv='devour mpv'
 alias yt-dlp-audio="yt-dlp -f 'ba' -x --audio-format mp3"
 alias myip='curl -4 http://ifconfig.co/ip'
 alias joke='curl https://icanhazdadjoke.com'
 alias cheat='function _e(){ curl cheat.sh/$1; };_e'
 alias speedtest='function _e(){ curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -; };_e'
+
