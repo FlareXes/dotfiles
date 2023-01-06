@@ -11,3 +11,6 @@ done
 
 echo "DONE!, $?"
 
+7z a -mhe=on -p all_repos.7z ../all_repos
+
+echo "DONE!, $?"
