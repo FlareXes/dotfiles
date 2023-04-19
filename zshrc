@@ -1,3 +1,4 @@
+
 # ----- User Edits ----- #
 export EDITOR="nvim"
 export LANG="en_US.UTF-8"
@@ -13,10 +14,12 @@ alias lg='lsd -l --group-directories-first'
 alias tree='lsd --tree'
 
 # One Char
+alias e="exit"
 alias c="clear"
 alias h="history | cut -c 8- | fzf --tac | xargs -I {} xdotool type --window getactivewindow {}"
 
 # My Alias
+alias cat="bat"
 alias open='xdg-open'
 alias mpv='devour mpv'
 alias yt-dlp-audio="yt-dlp -f 'ba' -x --audio-format mp3"
