@@ -22,13 +22,13 @@ brand:
 
 search:
   # Filter results. 0: None, 1: Moderate, 2: Strict
-  safe_search: 0
+  safe_search: 1
   # Existing autocomplete backends: "dbpedia", "duckduckgo", "google", "yandex",
   # "seznam", "startpage", "swisscows", "qwant", "wikipedia" - leave blank to turn it off
   # by default.
-  autocomplete: "brave"
+  autocomplete: "google"
   # minimun characters to type before autocompleter starts
-  autocomplete_min: 4
+  autocomplete_min: 3
   # Default search language - leave blank to detect from browser information or
   # use codes from 'languages.py'
   default_lang: "en"
@@ -78,11 +78,11 @@ server:
   # If your instance owns a /etc/searxng/settings.yml file, then set the following
   # values there.
 
-  secret_key: "b9e49f579ea8341e1335ae11a56e36f0a7dc67c6f2d9ec2095152cba29029b28"  # Is overwritten by ${SEARXNG_SECRET}
+  secret_key: "d23f23g243j4ig4t3445876fu3hrifh38rhfh38rf3g83"  # Is overwritten by ${SEARXNG_SECRET}
   # Proxying image results through searx
   image_proxy: false
   # 1.0 and 1.1 are supported
-  http_protocol_version: "1.0"
+  http_protocol_version: "1.1"
   # POST queries are more secure as they don't show up in history but may cause
   # problems when using Firefox containers
   method: "GET"
@@ -500,7 +500,7 @@ engines:
     engine: duckduckgo_definitions
     shortcut: ddd
     weight: 2
-    disabled: true
+    disabled: false
     tests: *tests_infobox
 
   # cloudflare protected
@@ -569,7 +569,7 @@ engines:
   - name: duckduckgo weather
     engine: duckduckgo_weather
     shortcut: ddw
-    disabled: true
+    disabled: false
 
   - name: apple maps
     engine: apple_maps
@@ -587,7 +587,7 @@ engines:
     engine: tineye
     shortcut: tin
     timeout: 9.0
-    disabled: true
+    disabled: false
 
   - name: etymonline
     engine: xpath
@@ -723,6 +723,7 @@ engines:
   - name: google
     engine: google
     shortcut: go
+    disabled: true
     # additional_tests:
     #   android: *test_android
 
@@ -1213,7 +1214,7 @@ engines:
     engine: qwant
     shortcut: qwi
     categories: [images, web]
-    disabled: false
+    disabled: true
     network: qwant
 
   - name: qwant videos
@@ -1221,7 +1222,7 @@ engines:
     engine: qwant
     shortcut: qwv
     categories: [videos, web]
-    disabled: false
+    disabled: true
     network: qwant
 
   # - name: library
@@ -1347,7 +1348,7 @@ engines:
     engine: startpage
     shortcut: sp
     timeout: 6.0
-    disabled: true
+    disabled: false
     additional_tests:
       rosebud: *test_rosebud
 
@@ -1445,7 +1446,7 @@ engines:
   - name: yahoo
     engine: yahoo
     shortcut: yh
-    disabled: true
+    disabled: false
 
   - name: yahoo news
     engine: yahoo_news
@@ -1746,7 +1747,7 @@ engines:
   - name: mediathekviewweb
     engine: mediathekviewweb
     shortcut: mvw
-    disabled: false
+    disabled: true
 
   # - name: yacy
   #   engine: yacy
@@ -1841,7 +1842,7 @@ engines:
       week: 'pw'
       month: 'pm'
       year: 'py'
-    categories: [general, web]
+    categories: [general, web, image]
     disabled: false
     headers:
       Accept-Encoding: gzip, deflate
