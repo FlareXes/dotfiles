@@ -8,9 +8,7 @@ export PATH="/home/radowoo/.local/bin:$PATH"
 alias l='lsd -lh --group-dirs=last'
 alias ll='lsd -lah --group-dirs=last'
 alias la='lsd -A'
-alias lm='lsd -m'
 alias lr='lsd -R'
-alias lg='lsd -l --group-directories-first'
 alias tree='lsd --tree'
 
 # One Char
@@ -20,11 +18,14 @@ alias h="history | cut -c 8- | fzf --tac | xargs -I {} xdotool type --window get
 
 # My Alias
 alias cat="bat"
-alias open='xdg-open'
-alias mpv='devour mpv'
+alias open="xdg-open"
+alias mpv="devour mpv"
 alias yt-dlp-audio="yt-dlp -f 'ba' -x --audio-format mp3"
-alias myip='curl -4 http://ifconfig.co/ip'
-alias joke='curl https://icanhazdadjoke.com'
+alias myip="curl -4 http://ifconfig.co/ip"
+alias joke="curl https://icanhazdadjoke.com"
+
+## Function Aliases
 alias cheat='function _e(){ curl cheat.sh/$1; };_e'
+alias foyay='function _e(){ curl -s https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD\?h\=$2 | bat --language=PKGBUILD; };_e'
 alias speedtest='function _e(){ curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -; };_e'
 
