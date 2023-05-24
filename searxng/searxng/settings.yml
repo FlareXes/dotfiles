@@ -28,7 +28,7 @@ search:
   # by default.
   autocomplete: "google"
   # minimun characters to type before autocompleter starts
-  autocomplete_min: 3
+  autocomplete_min: 2
   # Default search language - leave blank to detect from browser information or
   # use codes from 'languages.py'
   default_lang: "en"
@@ -42,7 +42,7 @@ search:
   #   - fr
   #   - fr-BE
   # ban time in seconds after engine errors
-  ban_time_on_fail: 5
+  ban_time_on_fail: 3
   # max ban time in seconds after engine errors
   max_ban_time_on_fail: 120
   suspended_times:
@@ -78,7 +78,7 @@ server:
   # If your instance owns a /etc/searxng/settings.yml file, then set the following
   # values there.
 
-  secret_key: "d23f23g243j4ig4t3445876fu3hrifh38rhfh38rf3g83"  # Is overwritten by ${SEARXNG_SECRET}
+  secret_key: "THIS_WILL_BE_RANDOM"  # Is overwritten by ${SEARXNG_SECRET}
   # Proxying image results through searx
   image_proxy: false
   # 1.0 and 1.1 are supported
@@ -150,7 +150,7 @@ ui:
 #
 outgoing:
   # default timeout in seconds, can be override by engine
-  request_timeout: 3.0
+  request_timeout: 2.0
   # the maximum timeout in seconds
   # max_request_timeout: 10.0
   # suffix of searx_useragent, could contain information like an email address
@@ -559,17 +559,18 @@ engines:
   - name: duckduckgo
     engine: duckduckgo
     shortcut: ddg
+    page_size: 20
 
   - name: duckduckgo images
     engine: duckduckgo_images
     shortcut: ddi
     timeout: 3.0
-    disabled: false
+    disabled: true
 
   - name: duckduckgo weather
     engine: duckduckgo_weather
     shortcut: ddw
-    disabled: false
+    disabled: true
 
   - name: apple maps
     engine: apple_maps
@@ -587,7 +588,7 @@ engines:
     engine: tineye
     shortcut: tin
     timeout: 9.0
-    disabled: false
+    disabled: true
 
   - name: etymonline
     engine: xpath
@@ -686,7 +687,7 @@ engines:
     categories: [it, repos]
     shortcut: gl
     timeout: 10.0
-    disabled: false
+    disabled: true
     about:
       website: https://about.gitlab.com/
       wikidata_id: Q16639197
@@ -723,7 +724,7 @@ engines:
   - name: google
     engine: google
     shortcut: go
-    disabled: true
+    page_size: 10
     # additional_tests:
     #   android: *test_android
 
@@ -1446,7 +1447,7 @@ engines:
   - name: yahoo
     engine: yahoo
     shortcut: yh
-    disabled: false
+    disabled: true
 
   - name: yahoo news
     engine: yahoo_news
@@ -1620,7 +1621,7 @@ engines:
     #
     # Or you can use the html non-stable engine, activated by default
     engine: wolframalpha_noapi
-    timeout: 6.0
+    timeout: 3.0
     categories: []
 
   - name: dictzone
@@ -1829,6 +1830,7 @@ engines:
     shortcut: brave
     engine: xpath
     paging: true
+    page_size: 30
     time_range_support: true
     first_page_num: 0
     time_range_url: "&tf={time_range_val}"
@@ -1842,7 +1844,7 @@ engines:
       week: 'pw'
       month: 'pm'
       year: 'py'
-    categories: [general, web, image]
+    categories: [general, web]
     disabled: false
     headers:
       Accept-Encoding: gzip, deflate
