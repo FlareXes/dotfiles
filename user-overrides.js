@@ -1,5 +1,6 @@
 user_pref("privacy.resistFingerprinting.letterboxing", false);
 user_pref("keyword.enabled", true);
+user_pref("security.OCSP.require", false);
 
 
 user_pref("browser.search.suggest.enabled", true);
