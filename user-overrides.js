@@ -1,7 +1,25 @@
+user_pref("app.update.suppressPrompts", true);
+user_pref("browser.aboutwelcome.enabled", false);
+user_pref("browser.menu.showViewImageInfo", true);
+user_pref("browser.preferences.moreFromMozilla", false);
+user_pref("browser.shell.checkDefaultBrowser", false);
+user_pref("browser.tabs.firefox-view", false);
+user_pref("extensions.pocket.enabled", false);
+user_pref("findbar.highlightAll", true);
+user_pref("gfx.canvas.accelerated.cache-items", 4096);
+user_pref("gfx.canvas.accelerated.cache-size", 512);
+user_pref("gfx.content.skia-font-cache-size", 20);
+user_pref("identity.fxaccounts.enabled", false);
+user_pref("image.mem.decode_bytes_at_a_time", 32768);
+user_pref("layout.css.grid-template-masonry-value.enabled", true);
+user_pref("layout.css.has-selector.enabled", true);
+user_pref("layout.css.prefers-color-scheme.content-override", 2);
+user_pref("media.cache_readahead_limit", 7200);
+user_pref("media.cache_resume_threshold", 3600);
+user_pref("security.OCSP.enabled", 0);
+user_pref("security.OCSP.require", false);
 user_pref("privacy.resistFingerprinting.letterboxing", false);
 user_pref("keyword.enabled", true);
-user_pref("security.OCSP.require", false);
 user_pref("browser.download.always_ask_before_handling_new_types", false);
-
 user_pref("browser.search.suggest.enabled", true);
 user_pref("browser.urlbar.suggest.searches", true);
