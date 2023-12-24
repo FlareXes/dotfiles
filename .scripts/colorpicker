@@ -1,0 +1,15 @@
+#!/bin/bash
+
+color=$(hyprpicker -a)
+image=/tmp/${color}.png
+convert -size 32x32 xc:"$color" "$image"
+
+main() {
+    if [[ "$color" ]]; then
+        dunstify -t 3000 -u low -a colorpicker -i "$image" "$color, copied to clipboard."
+    fi
+}
+
+# run the script
+main
+

@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+if [[ "$1" == "inc" ]]; then
+  brightnessctl set +10% > /dev/null
+  brightness=$(bc <<< "scale=1; $(brightnessctl get) / 400 * 100")
+  dunstify -t 3000 -a "  Brightness" -h int:value:"$brightness" "%"
+else 
+  brightnessctl set 10%- > /dev/null
+  brightness=$(bc <<< "scale=1; $(brightnessctl get) / 400 * 100")
+  dunstify -t 3000 -a "  Brightness" -h int:value:"$brightness" "%"
+fi

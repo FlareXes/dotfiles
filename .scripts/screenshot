@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Capture screenshot
+screenshot="$(slurp)"
+
+# Process the screenshot and copy to clipboard
+grim -g "$screenshot" - | convert - -shave 2x2 PNG:- | wl-copy
+
+# Notify screenshot has copied to clipboard
+dunstify -t 3000 -u low -a screenshot "Screenshot copied to clipboard"
+
+# Paste to clipboard and use swappy for further processing
+wl-paste | swappy -f -
