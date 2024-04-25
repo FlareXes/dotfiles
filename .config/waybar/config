@@ -4,7 +4,6 @@
     "mod": "dock",
     "exclusive": true,
     "passthrough": false,
-    "gtk-layer-shell": false,
     "height": 30,
     "modules-left": ["clock","cpu","memory","network"],
     "modules-center": ["hyprland/window"],
@@ -47,16 +46,16 @@
     },
 
     "cpu": {
-        "format": "{usage}% ",
+        "format": "  {usage}%",
         "tooltip": false
     },
     
     "memory": {
-        "format": "{}% "
+        "format": "  {}%"
     },
 
     "disk": {
-	    "format": "{free} ",
+	    "format": "  {free}",
     },
 
     "backlight": {
