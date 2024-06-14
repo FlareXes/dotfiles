@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+execute() {
+    local wait="$(( $1 * 1000 ))"
+    local sleep_time="$2"
+    local cmd="$3"
+    local keypress="${4:-return}"
+
+    # Ensure wait_time is at least 1 millisecond
+    if [ "$wait" -lt 1000 ]; then
+        wait=1
+    fi
+
+    # Type and execute the command with optional keypress
+    printf "$cmd" | wtype -d 30 - -s "$wait" -k "$keypress"
+
+    sleep "$sleep_time"
+}
+
+# Usage: $0 <wait_time> <command> <sleep_time> [<keypress>]
+#   wait_time:  Time to wait after typing the command (seconds)
+#   sleep_time: Time to sleep before executing the next command (seconds)
+#   command:    Command to execute
+#   keypress:   Optional keypress after typing the command (default: return)
+
+# Usage example:
+execute 1 2 "lsd -l"
+execute 1 2 "nvim ~/sleepexec"
+execute 2 0 ":q!"
+execute 1 0 "clear && cat ~/sleepexec"
