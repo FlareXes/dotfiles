@@ -1,4 +1,5 @@
 # Default OMZ theme for Archcraft
+# Project Link: https://github.com/archcraft-os/archcraft-skeleton/blob/main/archcraft-omz/archcraft.zsh-theme
 
 if [[ "$USER" == "root" ]]; then
   PROMPT="%(?:%{$fg_bold[red]%}%{$fg_bold[yellow]%}%{$fg_bold[red]%} :%{$fg_bold[red]%} )"
