@@ -6,8 +6,7 @@
 ## Rofi   : Launcher (Modi Drun, Run, File Browser, Window)
 #
 ## Current Styles
-# type-6, style-9
-
+# type-1, style-9
 
 dir="$HOME/.config/rofi/"
 theme='style'
