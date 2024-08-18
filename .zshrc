@@ -12,12 +12,14 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR="nvim"
 export LANG="en_US.UTF-8"
 export MANPAGER="bat -l man -p"
+export GOPATH="$HOME/.local/go"
 export PATH="$HOME/.local/bin:$PATH:$HOME/.scripts"
 
 ## ls
+alias ls='lsd --group-dirs=first'
 alias l='lsd -lh --group-dirs=last'
 alias ll='lsd -lah --group-dirs=last'
-alias la='lsd -A'
+alias la='lsd -A --group-dirs=first'
 alias lr='lsd -R'
 alias tree='lsd --tree'
 
@@ -31,9 +33,12 @@ alias gc='git commit -m'
 ## One Char
 alias e="exit"
 alias c="clear"
+alias h="history"
 
 ## My Alias
 alias open="xdg-open"
+alias copy="wl-copy"
+alias paste="wl-paste"
 alias cat="bat --theme=Dracula --italic-text=always"
 alias shred="shred --verbose --remove --iterations=50"
 alias mktest="mkdir /tmp/test/; cd /tmp/test/; pwd"
