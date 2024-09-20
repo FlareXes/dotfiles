@@ -4,7 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="archcraft"
 
 ## Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(zsh-syntax-highlighting git)
 source $ZSH/oh-my-zsh.sh
 
 # USER CONFIGURATION
