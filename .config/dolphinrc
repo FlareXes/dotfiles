@@ -1,0 +1,34 @@
+MenuBar=Disabled
+
+[ContextMenu]
+ShowAddToPlaces=false
+ShowOpenInNewWindow=false
+ShowSortBy=false
+ShowViewMode=false
+
+[General]
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowZoomSlider=false
+UseTabForSwitchingSplitView=true
+Version=202
+ViewPropsTimestamp=2024,9,28,21,1,56.535
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[PlacesPanel]
+IconSize=32
+
+[PreviewSettings]
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,avif,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,fontthumbnail,heif,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gdk-pixbuf-thumbnailer,gsthumbnail,rawthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs,gsf-office
+
+[Search]
+Location=Everywhere
+
+[ViewPropertiesDialog]
+1728x1080 screen: Window-Maximized=true
