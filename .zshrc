@@ -13,7 +13,8 @@ export EDITOR="nvim"
 export LANG="en_US.UTF-8"
 export MANPAGER="bat -l man -p"
 export GOPATH="$HOME/.local/go"
-export PATH="$HOME/.local/bin:$PATH:$HOME/.scripts"
+export PATH="$PATH:$HOME/.scripts:$HOME/.local/go/bin"
+export QT_QPA_PLATFORMTHEME="kde"
 
 ## ls
 alias ls='lsd --group-dirs=first'
