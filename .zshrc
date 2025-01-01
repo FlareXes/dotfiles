@@ -11,10 +11,10 @@ source $ZSH/oh-my-zsh.sh
 ####################
 export EDITOR="nvim"
 export LANG="en_US.UTF-8"
-export MANPAGER="bat -l man -p"
-export GOPATH="$HOME/.local/go"
-export PATH="$PATH:$HOME/.scripts:$HOME/.local/go/bin"
-export QT_QPA_PLATFORMTHEME="kde"
+export PATH="$PATH:$HOME/.scripts"
+
+## execute
+eval "$(zoxide init --cmd cd zsh)"
 
 ## ls
 alias ls='lsd --group-dirs=first'
@@ -41,19 +41,21 @@ alias open="xdg-open"
 alias copy="wl-copy"
 alias paste="wl-paste"
 alias cat="bat --theme=Dracula --italic-text=always"
-alias shred="shred --verbose --remove --iterations=50"
+alias shred55="shred --verbose --remove --iterations=55"
 alias mktest="mkdir /tmp/test/; cd /tmp/test/; pwd"
 
 ## Online Alias
-alias fmpv="mpv --script-opts-append=ytdl_hook-try_ytdl_first=yes --ytdl-raw-options=format-sort='proto:m3u8'"
 alias yt-dlp-audio="yt-dlp -f 'ba' -x --audio-format mp3"
 alias myip="curl -4 http://ifconfig.co/ip"
+
+## Long Aliases
+alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 ## Function Aliases
 alias cheat='function _e(){ curl cheat.sh/$1; };_e'
 alias foyay='function _e(){ curl -s https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD\?h\=$2 | bat --language=PKGBUILD; };_e'
 
-## Long Aliases
-alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
-alias venv="python -m venv venv && source ./venv/bin/activate"
-
+## Source private config if exists
+if [ -f "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
