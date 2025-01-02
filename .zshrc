@@ -11,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 ####################
 export EDITOR="nvim"
 export LANG="en_US.UTF-8"
-export PATH="$PATH:$HOME/.scripts"
+export PATH="$PATH:$HOME/.scripts:$HOME/.local/bin"
 
 ## execute
 eval "$(zoxide init --cmd cd zsh)"
