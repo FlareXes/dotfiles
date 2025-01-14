@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/FlareXes/fshare/main/fshare
+https://raw.githubusercontent.com/FlareXes/check-breach/main/check-breach
