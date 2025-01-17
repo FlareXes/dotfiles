@@ -25,16 +25,18 @@ configuration {
 /***---Cyberpunk.rasi---***/
 
 * {
-    background:     #000B1EFF;
-    background-alt: #0A1528FF;
+    background:     #0D162400;
+    background-alt: #0D162400;
     foreground:     #0ABDC6FF;
     selected:       #0ABDC6FF;
     active:         #00FF00FF;
     urgent:         #FF0000FF;
+    custom:         #1C3F4FFF;
 }
 
 * {
     font: "JetBrains Mono Nerd Font 10";
+    custom-text-color:           var(custom);
     border-colour:               var(selected);
     handle-colour:               var(selected);
     background-colour:           var(background);
@@ -81,14 +83,6 @@ window {
     cursor:                      "default";
     /* Backgroud Colors */
     background-color:            @background-colour;
-    /* Backgroud Image */
-    //background-image:          url("/path/to/image.png", none);
-    /* Simple Linear Gradient */
-    //background-image:          linear-gradient(red, orange, pink, purple);
-    /* Directional Linear Gradient */
-    //background-image:          linear-gradient(to bottom, pink, yellow, magenta);
-    /* Angle Linear Gradient */
-    //background-image:          linear-gradient(45, cyan, purple, indigo);
 }
 
 /*****----- Main Box -----*****/
@@ -231,7 +225,7 @@ element normal.active {
 }
 element selected.normal {
     background-color:            var(selected-normal-background);
-    text-color:                  var(selected-normal-foreground);
+    text-color:                  var(custom-text-color);
 }
 element selected.urgent {
     background-color:            var(selected-urgent-background);
