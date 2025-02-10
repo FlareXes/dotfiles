@@ -5,7 +5,7 @@
 # Description: A hyprpaper script to updates the current wallpaper.
 
 # Check for required dependencies
-dependencies=("convert" "file" "hyprpaper")
+dependencies=("magick" "file" "hyprpaper")
 
 for dep in "${dependencies[@]}"; do
     if ! command -v "$dep" >/dev/null 2>&1; then
@@ -45,7 +45,7 @@ else
     echo "[INFO] Convert the image to PNG format."
 
     output_file="$(mktemp /tmp/current_wallpaper.XXXXXXXXX.png)"
-    convert "$input_file" "$output_file"
+    magick "$input_file" "$output_file"
 
     # Check if conversion was successful
     if [ $? -ne 0 ]; then
