@@ -1,0 +1,46 @@
+[Default Applications]
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+
+# Image
+image/png=imv-dir.desktop
+image/jpeg=imv-dir.desktop
+image/webp=imv-dir.desktop
+image/gif=imv-dir.desktop
+image/bmp=imv-dir.desktop
+image/tiff=imv-dir.desktop
+image/svg+xml=imv-dir.desktop
+image/x-tga=imv-dir.desktop
+image/x-portable-pixmap=imv-dir.desktop
+image/x-portable-graymap=imv-dir.desktop
+image/x-portable-bitmap=imv-dir.desktop
+
+
+[Added Associations]
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+text/html=firefox.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
+
+# Image
+image/png=imv-dir.desktop;
+image/jpeg=imv-dir.desktop;
+image/webp=imv-dir.desktop;
+image/gif=imv-dir.desktop;
+image/bmp=imv-dir.desktop;
+image/tiff=imv-dir.desktop;
+image/svg+xml=imv-dir.desktop;
