@@ -24,6 +24,9 @@ done
 # Ensure screenshot directory exists
 mkdir -p "$SCREENSHOT_DIR"
 
+# Kill slurp if already running
+pkill -x slurp && exit 0
+
 # Capture screenshot
 screenshot="$(slurp || true)"
 
