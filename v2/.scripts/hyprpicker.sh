@@ -17,7 +17,7 @@ fi
 FORMATS="hex\nrgb\nhsl\nhsv\ncmyk"
 
 # Run wofi while holding the lock
-FORMAT=$(printf "%b" "$FORMATS" | wofi --dmenu --prompt "Format")
+FORMAT=$(printf "%b" "$FORMATS" | rofi -dmenu -p "Format")
 
 # IMPORTANT: release lock explicitly
 flock -u 9
@@ -28,4 +28,3 @@ exec 9>&-
 
 # Now run hyprpicker without holding the lock
 hyprpicker -a -f "$FORMAT"
-
