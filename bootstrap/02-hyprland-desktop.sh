@@ -12,7 +12,7 @@ pac_install \
   udiskie \
   nwg-look \
   swww \
-  wofi
+  rofi
 
 echo "✅ Hyprland desktop packages done."
 echo "NOTE: Add polkit agent autostart to hyprland.conf:"
