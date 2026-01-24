@@ -1,0 +1,6 @@
+configuration {
+    cycle: false;
+    display-drun: " ";
+}
+
+@theme "themes/minimal/layout.rasi"
