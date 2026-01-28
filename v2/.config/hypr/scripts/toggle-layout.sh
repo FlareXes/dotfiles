@@ -16,4 +16,3 @@ elif [ "$current_layout" == "master" ]; then
     hyprctl "keyword general:layout dwindle"
     hyprctl "keyword bind $mainMod, Tab, cyclenext"
 fi
-
