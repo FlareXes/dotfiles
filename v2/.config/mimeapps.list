@@ -1,16 +1,32 @@
 [Default Applications]
+
+# --------------------
+# Web / Browser
+# --------------------
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
 x-scheme-handler/chrome=firefox.desktop
-text/html=firefox.desktop
-application/x-extension-htm=firefox.desktop
-application/x-extension-html=firefox.desktop
-application/x-extension-shtml=firefox.desktop
-application/xhtml+xml=firefox.desktop
-application/x-extension-xhtml=firefox.desktop
-application/x-extension-xht=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
 
-# Image
+text/html=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/pdf=firefox.desktop
+application/json=firefox.desktop
+application/rss+xml=firefox.desktop
+application/rdf+xml=firefox.desktop
+application/x-xpinstall=firefox.desktop
+
+# --------------------
+# Text / Editor
+# --------------------
+text/plain=org.xfce.mousepad.desktop
+application/x-shellscript=org.xfce.mousepad.desktop
+application/x-zerosize=org.xfce.mousepad.desktop
+
+# --------------------
+# Images
+# --------------------
 image/png=imv-dir.desktop
 image/jpeg=imv-dir.desktop
 image/webp=imv-dir.desktop
@@ -18,29 +34,55 @@ image/gif=imv-dir.desktop
 image/bmp=imv-dir.desktop
 image/tiff=imv-dir.desktop
 image/svg+xml=imv-dir.desktop
-image/x-tga=imv-dir.desktop
-image/x-portable-pixmap=imv-dir.desktop
-image/x-portable-graymap=imv-dir.desktop
-image/x-portable-bitmap=imv-dir.desktop
+image/avif=imv-dir.desktop
+image/heif=imv-dir.desktop
+image/jxl=imv-dir.desktop
+image/qoi=imv-dir.desktop
 
+# --------------------
+# Audio (mpv)
+# --------------------
+audio/mpeg=mpv.desktop
+audio/flac=mpv.desktop
+audio/ogg=mpv.desktop
+audio/mp4=mpv.desktop
+audio/aac=mpv.desktop
+audio/x-wavpack=mpv.desktop
+audio/x-ms-wma=mpv.desktop
+audio/vnd.dts=mpv.desktop
+audio/vnd.dts.hd=mpv.desktop
+audio/x-matroska=mpv.desktop
+audio/x-scpls=mpv.desktop
+audio/x-mpegurl=mpv.desktop
+audio/webm=mpv.desktop
+audio/x-aiff=mpv.desktop
+audio/vnd.wave=mpv.desktop
+audio/x-ape=mpv.desktop
+audio/x-adpcm=mpv.desktop
+audio/x-vorbis+ogg=mpv.desktop
+audio/mp2=mpv.desktop
+audio/ac3=mpv.desktop
+audio/AMR=mpv.desktop
 
-[Added Associations]
-x-scheme-handler/http=firefox.desktop;
-x-scheme-handler/https=firefox.desktop;
-x-scheme-handler/chrome=firefox.desktop;
-text/html=firefox.desktop;
-application/x-extension-htm=firefox.desktop;
-application/x-extension-html=firefox.desktop;
-application/x-extension-shtml=firefox.desktop;
-application/xhtml+xml=firefox.desktop;
-application/x-extension-xhtml=firefox.desktop;
-application/x-extension-xht=firefox.desktop;
+# --------------------
+# Video (mpv)
+# --------------------
+video/mp4=mpv.desktop
+video/webm=mpv.desktop
+video/x-matroska=mpv.desktop
+video/x-flv=mpv.desktop
+video/x-ms-wmv=mpv.desktop
+video/quicktime=mpv.desktop
+video/mpeg=mpv.desktop
+video/ogg=mpv.desktop
+video/mp2t=mpv.desktop
+video/3gpp=mpv.desktop
+video/3gpp2=mpv.desktop
+video/vnd.avi=mpv.desktop
+video/x-theora+ogg=mpv.desktop
+video/x-ogm+ogg=mpv.desktop
+video/vnd.mpegurl=mpv.desktop
+video/vnd.rn-realvideo=mpv.desktop
+video/x-flic=mpv.desktop
+video/dv=mpv.desktop
 
-# Image
-image/png=imv-dir.desktop;
-image/jpeg=imv-dir.desktop;
-image/webp=imv-dir.desktop;
-image/gif=imv-dir.desktop;
-image/bmp=imv-dir.desktop;
-image/tiff=imv-dir.desktop;
-image/svg+xml=imv-dir.desktop;
