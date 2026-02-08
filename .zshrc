@@ -7,22 +7,27 @@ ZSH_THEME="archcraft"
 plugins=(zsh-syntax-highlighting git)
 source $ZSH/oh-my-zsh.sh
 
+## execute
+eval "$(zoxide init --cmd cd zsh)"
+
 # USER CONFIGURATION
 ####################
 export EDITOR="nvim"
 export LANG="en_US.UTF-8"
 export PATH="$PATH:$HOME/.scripts:$HOME/.local/bin"
 
-## execute
-eval "$(zoxide init --cmd cd zsh)"
+## Source private config if exists
+if [ -f "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
 
 ## ls
-alias ls='lsd --group-dirs=first'
-alias l='lsd -lh --group-dirs=last'
-alias ll='lsd -lah --group-dirs=last'
-alias la='lsd -A --group-dirs=first'
-alias lr='lsd -R'
-alias tree='lsd --tree'
+alias ls='eza --group-directories-first'
+alias l='eza -l --group-directories-last'
+alias ll='eza -la --group-directories-last'
+alias la='eza -a --group-directories-last'
+alias lr='eza -R'
+alias tree='eza --tree'
 
 ## git
 alias gcl='git clone --depth 1'
@@ -32,11 +37,13 @@ alias ga='git add'
 alias gc='git commit -m'
 
 ## One Char
+alias v="nvim"
 alias e="exit"
 alias c="clear"
 alias h="history"
 
 ## My Alias
+alias imv="imv-dir"
 alias open="xdg-open"
 alias copy="wl-copy"
 alias paste="wl-paste"
@@ -48,14 +55,7 @@ alias mktest="mkdir /tmp/test/; cd /tmp/test/; pwd"
 alias yt-dlp-audio="yt-dlp -f 'ba' -x --audio-format mp3"
 alias myip="curl -4 http://ifconfig.co/ip"
 
-## Long Aliases
-alias code="code --enable-features=UseOzonePlatform --ozone-platform=wayland"
+## Functions
+yaycat() { yay -Gp "$1" | bat --theme=Dracula -l PKGBUILD }
+cheat() { curl -s "https://cheat.sh/$1" }
 
-## Function Aliases
-alias cheat='function _e(){ curl cheat.sh/$1; };_e'
-alias foyay='function _e(){ curl -s https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD\?h\=$2 | bat --language=PKGBUILD; };_e'
-
-## Source private config if exists
-if [ -f "$HOME/.zshrc.local" ]; then
-  source "$HOME/.zshrc.local"
-fi
