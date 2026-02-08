@@ -1,1 +1,6 @@
-hyprlocal.conf
+# core
+.zshrc.local
+
+# hyprland
+.config/hypr/local/
+
