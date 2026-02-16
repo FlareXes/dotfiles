@@ -1,6 +1,7 @@
 configuration {
     cycle: false;
     display-drun: " ";
+    // show-icons: true;
 }
 
 @theme "themes/minimal/layout.rasi"
