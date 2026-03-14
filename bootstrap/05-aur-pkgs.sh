@@ -21,6 +21,7 @@ command -v yay >/dev/null 2>&1 || die "yay not installed."
 
 echo "==> Installing AUR extras..."
 yay -S --needed --noconfirm \
+  selectdefaultapplication-git \
   ags-hyprpanel-git \
   matugen \
   python-pywalfox-librewolf

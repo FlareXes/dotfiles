@@ -5,6 +5,7 @@ need_user
 
 echo "==> Modern CLI toolkit..."
 pac_install \
+  mousepad \
   neovim \
   zoxide bat eza \
   jq fzf \
