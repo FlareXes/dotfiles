@@ -8,12 +8,13 @@ pac_install \
   hyprland hypridle hyprlock hyprpicker \
   xdg-desktop-portal-hyprland \
   qt5-wayland qt6-wayland \
+  rofi rofi-calc \
   polkit-gnome \
   udiskie \
   nwg-look \
-  swww \
-  rofi
+  swww
 
 echo "✅ Hyprland desktop packages done."
 echo "NOTE: Add polkit agent autostart to hyprland.conf:"
 echo "exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+
