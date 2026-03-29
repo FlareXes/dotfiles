@@ -1,4 +1,6 @@
 configuration {
+    // modi: "drun,run,window,calc";
+    modi: "calc";
     cycle: false;
     display-drun: " ";
     // show-icons: true;
