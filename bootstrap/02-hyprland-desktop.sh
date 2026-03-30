@@ -12,7 +12,7 @@ pac_install \
   polkit-gnome \
   udiskie \
   nwg-look \
-  swww
+  awww
 
 echo "✅ Hyprland desktop packages done."
 echo "NOTE: Add polkit agent autostart to hyprland.conf:"

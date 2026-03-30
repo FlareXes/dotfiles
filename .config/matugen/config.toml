@@ -2,7 +2,7 @@
 # https://github.com/InioX/matugen-themes
 
 [config.wallpaper]
-command = "swww img --transition-type random --transition-fps 60 {{ image }}"
+command = "awww img --transition-type random --transition-fps 60 {{ image }}"
 set = true
 
 [templates.alacritty]
