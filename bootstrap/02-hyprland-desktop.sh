@@ -12,9 +12,9 @@ pac_install \
   polkit-gnome \
   udiskie \
   nwg-look \
+  xarchiver \
   awww
 
 echo "✅ Hyprland desktop packages done."
 echo "NOTE: Add polkit agent autostart to hyprland.conf:"
 echo "exec-once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-
