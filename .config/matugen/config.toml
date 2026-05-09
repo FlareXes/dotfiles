@@ -35,3 +35,7 @@ post_hook = 'hyprctl reload'
 input_path = '~/.config/matugen/templates/pywalfox-colors.json'
 output_path = '~/.cache/wal/colors.json'
 post_hook = 'pywalfox update'
+
+[templates.wayle]
+input_path = "~/.config/matugen/templates/wayle.toml"
+output_path = "~/.config/wayle/matugen_colors.toml"

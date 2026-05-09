@@ -1,0 +1,70 @@
+[styling.palette]
+primary = "{{ colors.primary.default.hex }}"
+fg = "{{ colors.primary.default.hex }}"
+fg-muted = "{{ colors.secondary.default.hex }}"
+elevated = "{{ colors.background.default.hex }}"
+
+[modules.dashboard]
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.hyprland-workspaces]
+container-bg-color = "{{ colors.background.default.hex }}"
+active-color = "{{ colors.primary.default.hex }}"
+
+[modules.systray]
+button-bg-color = "{{ colors.background.default.hex }}"
+
+[modules.clock]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.battery]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.bluetooth]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.network]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.volume]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.microphone]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.media]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.notification]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
+
+[modules.window-title]
+label-color = "{{ colors.primary.default.hex }}"
+button-bg-color = "{{ colors.background.default.hex }}"
+icon-color = "{{ colors.background.default.hex }}"
+icon-bg-color = "{{ colors.primary.default.hex }}"
