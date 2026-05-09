@@ -1,0 +1,48 @@
+imports = ["./matugen/colors.toml"]
+
+[bar]
+bg = "transparent"
+
+# button
+button-variant = "icon-square" # basic, block-prefix, icon-square
+padding-ends = 0.8
+button-icon-size = 0.8
+button-label-size = 0.8
+button-rounding = "lg"
+button-icon-position = "end"
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "dashboard",
+    "hyprland-workspaces",
+]
+center = [
+    "systray",
+    "clock",
+]
+right = [
+    "battery",
+    "volume",
+    { name = "group", modules = [
+    "bluetooth",
+    "network",
+] },
+    "notifications",
+]
+
+# modules
+[modules.hyprland-workspaces]
+app-icons-show = true
+icon-size = 0.70
+label-size = 0.80
+
+[modules.network]
+label-show = false
+
+[modules.bluetooth]
+label-show = false
+
+[modules.notification]
+label-show = false

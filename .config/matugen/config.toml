@@ -38,4 +38,4 @@ post_hook = 'pywalfox update'
 
 [templates.wayle]
 input_path = "~/.config/matugen/templates/wayle.toml"
-output_path = "~/.config/wayle/matugen_colors.toml"
+output_path = "~/.config/wayle/matugen/colors.toml"
