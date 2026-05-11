@@ -2,6 +2,25 @@
   // ==============================
   // 🎨 Appearance & UI
   // ==============================
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "hide_gitignore": false,
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "theme": "Nightfox - opaque",
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 16.0,
@@ -26,7 +45,7 @@
     },
   },
   "colorize_brackets": true,
-  "auto_signature_help": true,
+  // "auto_signature_help": true,
   "show_signature_help_after_edits": true,
   "hover_popover_enabled": true,
   "inlay_hints": {
@@ -59,4 +78,3 @@
     "emmet": true,
   },
 }
-
