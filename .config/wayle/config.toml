@@ -38,6 +38,9 @@ app-icons-show = true
 icon-size = 0.70
 label-size = 0.80
 
+[modules.clock]
+format = "%I:%M %p - %b %d"
+
 [modules.network]
 label-show = false
 
@@ -46,3 +49,4 @@ label-show = false
 
 [modules.notification]
 label-show = false
+
