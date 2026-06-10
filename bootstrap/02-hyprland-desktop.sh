@@ -9,7 +9,7 @@ pac_install \
   xdg-desktop-portal-hyprland \
   qt5-wayland qt6-wayland \
   rofi rofi-calc \
-  thunar gvfs tumbler ffmpegthumbnailer thunar-archive-plugin \
+  thunar gvfs gvfs-mtp thunar-volman udisks2 tumbler ffmpegthumbnailer thunar-archive-plugin \
   polkit-gnome \
   udiskie \
   nwg-look \
